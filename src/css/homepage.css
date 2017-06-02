@@ -1,0 +1,33 @@
+.fullpage {
+	width: 100%;
+	height: 100vh;
+}
+
+.quote-container {
+	position: absolute;
+	top: 50%;
+	transform: translate3d(0,-70%,0);
+
+	padding: 30px;
+}
+
+.quote {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+/* .i-am { */
+/* 	position: absolute; */
+/* 	text-align: center; */
+/* 	width: 100%; */
+/* 	bottom: 0; */
+/* 	/1* transform: translate3d(50%,0,0) *1/ */
+/* } */
+
+.black-text {
+	color: #222
+}
+
+.white-text {
+	color: #fff
+}

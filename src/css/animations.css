@@ -1,0 +1,114 @@
+.anim-come-up {
+	animation-name: anim-come-up;
+	animation-fill-mode: backwards;
+}
+
+.anim-come-down {
+	animation-name: anim-come-down;
+	animation-fill-mode: backwards;
+}
+
+.anim-fade-in {
+	animation-name: anim-fade-in;
+	animation-fill-mode: backwards;
+}
+
+.anim-bounce {
+	animation-name: anim-bounce;
+	animation-fill-mode: backwards;
+}
+
+/* hybrids */
+.anim-fade-up {
+	animation-name: anim-come-up, anim-fade-in;
+	animation-fill-mode: backwards;
+}
+.anim-fade-down {
+	animation-name: anim-come-down, anim-fade-in;
+	animation-fill-mode: backwards;
+}
+
+/* keyframes */
+@keyframes anim-come-up {
+	0% {
+		transform: translate3d(0,100%,0)
+	}
+	100% {
+		transform: translate3d(0,0,0)
+	}
+}
+
+@keyframes anim-come-down {
+	0% {
+		transform: translate3d(0,-100%,0)
+	}
+	100% {
+		transform: translate3d(0,0,0)
+	}
+}
+
+@keyframes anim-fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes anim-bounce {
+	0% {
+		transform: translate3d(0,0,0)
+	}
+	50% {
+		transform: translate3d(0,50%,0)
+	}
+	100% {
+		transform: translate3d(0,0,0)
+	}
+}
+
+/* properties */
+/* duration */
+.anim-dur-1s {
+	animation-duration: 1s;
+}
+.anim-dur-2s {
+	animation-duration: 2s;
+}
+.anim-dur-4s {
+	animation-duration: 4s;
+}
+/* delay */
+.anim-delay-0s5 {
+	animation-delay: .5s;
+}
+.anim-delay-1s {
+	animation-delay: 1s;
+}
+.anim-delay-1s5 {
+	animation-delay: 1.5s;
+}
+.anim-delay-2s {
+	animation-delay: 2s;
+}
+.anim-delay-2s5 {
+	animation-delay: 2.5s;
+}
+.anim-delay-3s {
+	animation-delay: 3s;
+}
+.anim-delay-4s {
+	animation-delay: 4s;
+}
+/* easing */
+.anim-ease-out {
+	animation-timing-function: ease-out;
+}
+.anim-ease-in {
+	animation-timing-function: ease-in;
+}
+/* repeat */
+.anim-repeat {
+	animation-iteration-count: infinite;
+}

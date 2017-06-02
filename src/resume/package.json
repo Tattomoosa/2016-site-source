@@ -1,0 +1,15 @@
+{
+  "name": "mattotousaresume",
+  "version": "1.0.0",
+  "description": "Matt O'Tousa's resume",
+  "main": "index.js",
+  "dependencies": {
+    "reset-css": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tattomoosa",
+  "license": "ISC"
+}
