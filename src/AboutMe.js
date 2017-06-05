@@ -48,7 +48,7 @@ export default class AboutMe extends Component {
 							</p>
 						</div>
 						<div className='center-contents'>
-							<a href=''>
+							<a href='/resume'>
 								<h3>
 									<i className='fa fa-file-text-o fa-lg' aria-hidden='true'></i> 
 									<h6>RÉSUMÉ</h6>

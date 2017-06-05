@@ -99,6 +99,7 @@ class App extends Component {
 				<Section>
 					<HomePage
 						onMenuClick={this.menuToggle}
+						aboutPage={() => this.scrollTo(5)}
 						nextPage={this.nextPage}
 					/>
 				</Section>
@@ -155,6 +156,7 @@ class App extends Component {
 								<span style={labHL}> Google Analytics</span>.
 							</p>
 						}
+						link={'http://www3.nd.edu/~jotousa/labwww/'}
 						desktopImage={'./images/otousa-lab-site.png'}
 						color={labColor}
 						nextPage={this.nextPage}
@@ -185,6 +187,7 @@ class App extends Component {
 								I think there's even some <span style={cpHL}>jQuery</span> in there.
 							</p>
 						}
+						link={'http://www.codepen.com/tattomoosa'}
 						desktopImage={'./images/codepen-projects.png'}
 						color={cpColor}
 						nextPage={this.nextPage}

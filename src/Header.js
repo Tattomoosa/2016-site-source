@@ -13,7 +13,7 @@ export default class Header extends Component {
 		return (
 			<div className={headerStyle}>
 				<span className='float-right header-margin-left'>
-					<Menu color='black' onClick={this.props.onClick} animate={'stretch-left'}/>
+					<Menu color='black' onClick={this.props.onMenuClick} animate={'stretch-left'}/>
 				</span>
 				<span className='float-right menu-spacer'></span>
 				<span className='float-right header-margin'>
@@ -21,7 +21,9 @@ export default class Header extends Component {
 						Résumé
 					</a>
 				</span>
-				<span className='float-right header-margin'>
+				<span
+					onClick='this.props.onAboutClick'
+					className='float-right header-margin'>
 					About
 				</span>
 			</div>
