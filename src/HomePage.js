@@ -46,7 +46,10 @@ export default class HomePage extends React.Component {
 
 		return (
 			<div className='fullpage blue-bg'>
-				<Header onClick={this.props.onMenuClick}/>
+				<Header
+					onMenuClick={this.props.onMenuClick}
+					onAboutClick={() => this.scrollTo(5)}
+				/>
 				<div className='quote-container'>
 					<h1 className={blackQuoteClass}>
 						As simple as possible,
