@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Header from './Header'
+
 import './css/homepage.css'
 import './css/animations.css'
 
@@ -44,6 +46,7 @@ export default class HomePage extends React.Component {
 
 		return (
 			<div className='fullpage blue-bg'>
+				<Header onClick={this.props.onMenuClick}/>
 				<div className='quote-container'>
 					<h1 className={blackQuoteClass}>
 						As simple as possible,
@@ -69,8 +72,14 @@ export default class HomePage extends React.Component {
 						</span>
 						seamless experiences
 					</h2> 
-					<div className='anim-fade-in anim-dur-1s anim-delay-4s'>
-						<div className={triangle}></div>
+					<br/>
+					<br/>
+					<div className='anim-fade-in anim-dur-1s anim-delay-4s bottom-center-parent'
+						onClick={this.props.nextPage}
+					>
+						<div
+							className={triangle}
+						></div>
 					</div>
 				</div>
 			</div>

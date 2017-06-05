@@ -1,0 +1,116 @@
+.about-me-page-container {
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	padding-top:60px;
+	padding-bottom:60px;
+	text-align: center;
+}
+.about-me-container {
+	margin: 0;
+	height: 100%;
+	max-height: 100%;
+	box-sizing: border-box;
+}
+.about-me-container>h2 {
+	position: relative;
+	background: #4286f4;
+	color: white;
+	width: 160px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.about-me-container>h2:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left:0;
+	bottom: 100%;
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid #4286f4;
+	border-left: 160px solid transparent;
+}
+
+.about-me-container>h2:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left:0;
+	top: 100%;
+	width: 0;
+	height: 0;
+	border-top: 30px solid #4286f4;
+	border-right: 160px solid transparent;
+}
+
+.about-me-container>.text-container{
+	font-size:15px;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: left;
+	background: white;
+	color: black;
+	max-width: 400px;
+	margin: auto;
+}
+@media screen and (max-width: 600px) {
+	.about-me-container>.text-container{
+		/* width: 90%; */
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+.about-me-container a {
+	color: #4286f4;
+	text-decoration: none;
+	/* margin-right: 10px; */
+	/* margin-top: 10px; */
+	display: inline-block;
+	position: relative;
+	margin-right: 2px;
+	margin-left: 2px;
+	transition: border-width, padding, margin;
+	transition-duration: .1s;
+	transition-timing-function: ease-out;
+}
+.about-me-container a:visited {
+	color: #4286f4;
+}
+.about-me-container a>h3 {
+	display: inline-block;
+	padding: 12px;
+	margin: 0;
+	text-align: center;
+	text-decoration: none;
+	background: white;
+	position: relative;
+	border: 4px solid #4286f4;
+	transition: border-width, padding, margin;
+	transition-duration: .1s;
+	transition-timing-function: ease-out;
+}
+.about-me-container a>h3>i {
+	height: 20px;
+}
+.about-me-container a>h3>h6 {
+	margin-top: 5px;
+}
+.about-me-container a>h3:hover {
+	padding: 8px;
+	border-width: 6px;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.center-contents {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	bottom: 72px;
+}

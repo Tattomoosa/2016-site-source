@@ -18,6 +18,11 @@
 	animation-fill-mode: backwards;
 }
 
+.anim-stretch-left {
+	animation-name: anim-stretch-left;
+	animation-fill-mode: backwards;
+}
+
 /* hybrids */
 .anim-fade-up {
 	animation-name: anim-come-up, anim-fade-in;
@@ -68,8 +73,19 @@
 	}
 }
 
+@keyframes anim-stretch-left {
+	0% {
+		width: 10%;
+	}
+	100% {
+		width: 100%;
+	}
+}
 /* properties */
 /* duration */
+.anim-dur-0s5 {
+	animation-duration: .5s;
+}
 .anim-dur-1s {
 	animation-duration: 1s;
 }
@@ -80,6 +96,9 @@
 	animation-duration: 4s;
 }
 /* delay */
+.anim-delay-0s25 {
+	animation-delay: .25s;
+}
 .anim-delay-0s5 {
 	animation-delay: .5s;
 }
@@ -97,6 +116,12 @@
 }
 .anim-delay-3s {
 	animation-delay: 3s;
+}
+.anim-delay-3s25 {
+	animation-delay: 3.25s;
+}
+.anim-delay-3s5 {
+	animation-delay: 3.5s;
 }
 .anim-delay-4s {
 	animation-delay: 4s;

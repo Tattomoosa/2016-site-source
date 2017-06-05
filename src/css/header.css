@@ -1,12 +1,20 @@
 .header {
-	position: fixed;
+	/* position: fixed; */
 	z-index: 1000;
 	width: 100%;
-	padding: 8px;
+	padding: 20px;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+@media (max-width: 740px) {
+	.header {
+		padding-top: 30px;
+	}
 }
 
 .header>span {
 	font-size: 18px;
+	line-height: 40px;
 }
 .header>.title {
 	color: white;
@@ -27,4 +35,19 @@
 	height: 0;
 	border-top: 40px solid #333;
 	border-left: 100vw solid transparent;
+}
+.float-right {
+	float: right;
+}
+.header-margin {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.header-margin-left {
+	margin-left: 20px;
+}
+
+.menu-spacer {
+	height: 10px;
+	width: 50px;
 }

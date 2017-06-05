@@ -5,11 +5,22 @@ import './css/header.css'
 
 export default class Header extends Component {
 	render() {
+		const headerStyle = [
+			'header'
+			,'anim-fade-in'
+			,'anim-dur-0s5'
+		].join(' ')
 		return (
-			<div className='header'>
-				<span className='title'>Matt O'Tousa</span>
-				<span>
-					<Menu />
+			<div className={headerStyle}>
+				<span className='float-right header-margin-left'>
+					<Menu color='black' onClick={this.props.onClick} animate={'stretch-left'}/>
+				</span>
+				<span className='float-right menu-spacer'></span>
+				<span className='float-right header-margin'>
+					Résumé
+				</span>
+				<span className='float-right header-margin'>
+					About
 				</span>
 			</div>
 			)

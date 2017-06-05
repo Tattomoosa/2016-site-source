@@ -62,10 +62,28 @@ h1 {
 	height: 0;
 	margin: auto;
 	margin-top: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 12px;
 	border-left: 6.25px solid transparent;
 	border-right: 6.25px solid transparent;
 	border-top: 6.25px solid white;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	margin: auto;
+	margin-top: 12px;
+	margin-bottom: 20px;
+	border-left: 6.25px solid transparent;
+	border-right: 6.25px solid transparent;
+	border-bottom: 6.25px solid white;
+}
+
+.top-center-parent {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 0;
 }
 
 .bottom-center-parent {
