@@ -9,6 +9,16 @@
 	top: 10px;
 }
 
+.menu-button:hover .menu-button-line {
+	background: black !important;
+}
+.header .menu-button:hover .menu-button-line {
+	background: white !important;
+}
+.menu-container .menu-button:hover .menu-button-line {
+	background: #4286f4 !important;
+}
+
 .menu-button-line {
 	box-sizing: border-box;
 	width: 100%;

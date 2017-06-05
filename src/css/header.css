@@ -12,9 +12,15 @@
 	}
 }
 
-.header>span {
+.header>span, .header a {
 	font-size: 18px;
 	line-height: 40px;
+	text-decoration: none;
+	color: black;
+}
+.header>span:hover, .header a:hover {
+	color: white;
+	cursor: pointer;
 }
 .header>.title {
 	color: white;

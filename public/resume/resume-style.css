@@ -1,7 +1,7 @@
 /*@import url('node_modules/reset-css/reset.css');*/
 /*#444*/
 body {
-	font-family: 'Libre Baskerville';
+	font-family: 'Roboto';
 	color: #333;
 }
 /*h1,h3 {
@@ -22,7 +22,7 @@ dl:after {
 	top: -1.5em;
 }
 dt {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	text-align: right;
 	width: 17%;
 	width: calc(20% - 20px);
@@ -53,8 +53,20 @@ dl>h4,dl>h6 {
 	margin: 0;
 	padding: 0;
 }
+
+.work-history-headline h4, .work-history-headline h6 {
+	display: inline-block;
+}
+.work-history-headline h6 {
+	color: grey;
+}
+
+.work-history-headline h6:before {
+	content: 'from '
+}
+
 p {
-	font-family: sans-serif;
+	/* font-family: sans-serif; */
 	margin-top: 10px;
 	line-height: 1.4em;
 	font-size: 14px;
@@ -67,10 +79,32 @@ p {
 }
 .contact {
 	padding-top: 10px;
-	font-family: sans-serif;
+	/* font-family: sans-serif; */
 	text-align: right;
 	float: right;
 }
 .name {
 	float: left;
+	text-align: right;
+}
+.name h1, .name h3 {
+	font-weight: normal;
+}
+
+@media print {
+	dd {
+		margin-bottom: 1em;
+	}
+	dt {
+		font-size: 1em;
+	}
+	h4, strong {
+		font-size: .8em;
+	}
+	a {
+		text-decoration: none;
+	}
+	h5 {
+		font-weight: normal;
+	}
 }

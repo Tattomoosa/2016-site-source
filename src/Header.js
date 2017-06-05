@@ -17,7 +17,9 @@ export default class Header extends Component {
 				</span>
 				<span className='float-right menu-spacer'></span>
 				<span className='float-right header-margin'>
-					Résumé
+					<a href='/resume'>
+						Résumé
+					</a>
 				</span>
 				<span className='float-right header-margin'>
 					About
