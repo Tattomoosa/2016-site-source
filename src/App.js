@@ -99,7 +99,7 @@ class App extends Component {
 				<Section>
 					<HomePage
 						onMenuClick={this.menuToggle}
-						aboutPage={() => this.scrollTo(5)}
+						onAboutClick={() => this.scrollTo(5)}
 						nextPage={this.nextPage}
 					/>
 				</Section>

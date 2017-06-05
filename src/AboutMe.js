@@ -49,34 +49,34 @@ export default class AboutMe extends Component {
 						</div>
 						<div className='center-contents'>
 							<a href='/resume'>
-								<h3>
+								<div className='about-me-button'>
 									<i className='fa fa-file-text-o fa-lg' aria-hidden='true'></i> 
 									<h6>RÉSUMÉ</h6>
-								</h3>
+								</div>
 							</a>
 							<a href='mailto:matt@mattotousa.com'>
-								<h3>
+								<div className='about-me-button'>
 									<i className='fa fa-envelope-o fa-lg' aria-hidden='true'></i> 
 									<h6>EMAIL</h6>
-								</h3>
+								</div>
 							</a>
 							<a href='https://www.github.com/tattomoosa'>
-								<h3>
+								<div className='about-me-button'>
 									<i className='fa fa-github fa-lg' aria-hidden='true'></i> 
 									<h6>GITHUB</h6>
-								</h3>
+								</div>
 							</a>
 							<a href='https://www.freecodecamp.com/tattomoosa'>
-								<h3>
+								<div className='about-me-button'>
 									<i className='fa fa-free-code-camp fa-lg' aria-hidden='true'></i>
 									<h6>FCC</h6>
-								</h3>
+								</div>
 							</a>
 							<a href='https://www.linkedin.com/in/matt-otousa'>
-								<h3>
+								<div className='about-me-button'>
 									<i className='fa fa-linkedin fa-lg' aria-hidden='true'></i>
 									<h6>LINKEDIN</h6>
-								</h3>
+								</div>
 							</a>
 						</div>
 					</div>

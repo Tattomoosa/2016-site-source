@@ -22,7 +22,7 @@ export default class Header extends Component {
 					</a>
 				</span>
 				<span
-					onClick='this.props.onAboutClick'
+					onClick={this.props.onAboutClick}
 					className='float-right header-margin'>
 					About
 				</span>

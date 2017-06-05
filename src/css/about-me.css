@@ -81,7 +81,7 @@
 .about-me-container a:visited {
 	color: #4286f4;
 }
-.about-me-container a>h3 {
+.about-me-container a>.about-me-button {
 	display: inline-block;
 	padding: 12px;
 	margin: 0;
@@ -94,13 +94,13 @@
 	transition-duration: .1s;
 	transition-timing-function: ease-out;
 }
-.about-me-container a>h3>i {
+.about-me-container a>.about-me-button>i {
 	height: 20px;
 }
-.about-me-container a>h3>h6 {
+.about-me-container a>.about-me-button>h6 {
 	margin-top: 5px;
 }
-.about-me-container a>h3:hover {
+.about-me-container a>.about-me-button:hover {
 	padding: 8px;
 	border-width: 6px;
 	margin-right: 2px;
