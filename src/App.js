@@ -59,7 +59,6 @@ class App extends Component {
 
 		const {
 			showMenu
-			,currentPage
 		} = this.state
 
     return (
@@ -86,7 +85,12 @@ class App extends Component {
 					<div
 						onClick={() => this.scrollTo(5)}
 					>About</div>
-					<div>Résumé</div>
+				<div>
+					<a href='/resume'>
+						Résumé
+					</a>
+				</div>
+
 				</MenuDrawer>
 			<Scroller
 				onAfterScroll={this.updateCurrentPage}
