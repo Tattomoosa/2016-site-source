@@ -56,7 +56,7 @@
 /* 		top: 40px; */
 /* 	} */
 /* } */
-.menu-options>div {
+.menu-options div {
 	white-space: nowrap;
 	font-size: 30px;
 	line-height: 50px;
@@ -67,7 +67,7 @@
 	transition: background .1s, color .1s;
 	transition-timing-function: ease-out;
 }
-.menu-options>div:hover {
+.menu-options div:hover {
 	color: white;
 	background: black;
 	transition: background 0s, color 0s;
@@ -81,17 +81,36 @@
 	color: red;
 	cursor: auto;
 }
-.menu-options>div>a {
+.menu-options>a {
 	color: black;
 	text-decoration: none;
 }
-.menu-options>div>a:hover {
+.menu-options>a:hover {
 	color: white;
 }
+@media screen and (max-height: 500px) {
+	.menu-options div {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.menu-options div.spacer {
+		height: 10px;
+	}
+}
+@media screen and (max-height: 360px) {
+	.menu-options div {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.menu-options div.spacer {
+		height: 16px;
+	}
+}
+
 
 .menu-circle.big {
-	width: 250vmax;
-	height: 250vmax;
+	width: 260vmax;
+	height: 260vmax;
 	transition-timing-function: ease-in;
 }
 

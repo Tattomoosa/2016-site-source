@@ -6,6 +6,10 @@ import ProjectPage from './ProjectPage'
 import MenuDrawer from './MenuDrawer'
 import AboutMe from './AboutMe'
 
+import otousalabimg from './images/otousa-lab-site.png'
+import alyssaimg from './images/alyssa-site.png'
+import codepenimg from './images/codepen-projects.png'
+
 class App extends Component {
 	constructor() {
 		super()
@@ -85,11 +89,11 @@ class App extends Component {
 					<div
 						onClick={() => this.scrollTo(5)}
 					>About</div>
-				<div>
 					<a href='/resume'>
-						Résumé
+						<div>
+							Résumé
+						</div>
 					</a>
-				</div>
 
 				</MenuDrawer>
 			<Scroller
@@ -129,7 +133,7 @@ class App extends Component {
 							</p>
 						}
 						link={'https://www.alyssagarcia.art'}
-						desktopImage={'./images/alyssa-site.png'}
+						desktopImage={alyssaimg}
 						color={alyssaColor}
 						nextPage={this.nextPage}
 						prevPage={this.prevPage}
@@ -143,21 +147,20 @@ class App extends Component {
 							<p>
 								The O'Tousa Lab at Notre Dame studies "a wide range of molecular,
 								biochemical, and cellular methods to analyze genes responsible for
-								normal visual function." The site's primary purpose is to attract
-								grad students.
+								normal visual function." 
 							</p>
 						}
 						techDescription={
 							<p>
-								Notre Dame's faculty hosting services are somewhat limited,
-								so a simple <span style={labHL}>responsive </span>
-								static site was agreed on. No frameworks or external
+								This is a simple, static
+								<span style={labHL}>responsive </span>
+								site. No frameworks or external
 								libraries were used, except to integrate
 								<span style={labHL}> Google Analytics</span>.
 							</p>
 						}
 						link={'http://www3.nd.edu/~jotousa/labwww/'}
-						desktopImage={'./images/otousa-lab-site.png'}
+						desktopImage={otousalabimg}
 						color={labColor}
 						nextPage={this.nextPage}
 						prevPage={this.prevPage}
@@ -169,8 +172,9 @@ class App extends Component {
 						projectName="CodePen Projects"
 						projectDescription={
 							<p>
-								Mostly projects for the <span style={cpHL}>FreeCodeCamp </span>
-								curriculum, this is a collection of many projects done on CodePen
+								Mostly
+								<span style={cpHL}> FreeCodeCamp </span>
+								projects, 
 								including a <span style={cpHL}>random dungeon generator</span>,
 								<span style={cpHL}> Conway's Game of Life</span>,
 								a game of <span style={cpHL}>SIMON</span>, several <span style={cpHL}>
@@ -180,15 +184,15 @@ class App extends Component {
 						}
 						techDescription={
 							<p>
-								Various projects here utilize <span style={cpHL}>React</span>,
+								These utilize <span style={cpHL}>React</span>,
 								<span style={cpHL}> D3</span>, <span style={cpHL}>Bootstrap</span>,
 								the <span style={cpHL}>Canvas API</span>
-								, and the <span style={cpHL}>Web Audio API</span>. 
-								I think there's even some <span style={cpHL}>jQuery</span> in there.
+								, and the <span style={cpHL}>Web Audio API</span>, among others. 
+								I think there's even some <span style={cpHL}>jQuery</span> in there somewhere.
 							</p>
 						}
 						link={'http://www.codepen.com/tattomoosa'}
-						desktopImage={'./images/codepen-projects.png'}
+						desktopImage={codepenimg}
 						color={cpColor}
 						nextPage={this.nextPage}
 						prevPage={this.prevPage}

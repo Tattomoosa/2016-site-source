@@ -19,35 +19,36 @@ export default class AboutMe extends Component {
 					<div className='about-me-container'>
 						<h2>About</h2>
 						<div className='text-container'>
-							<p>
-								Currently in the process
-								of moving to Seattle,
-								Matt O'Tousa
-								is a front-end developer with an ever-growing
-								knowledge of full-stack development.
-							</p>
-							<p>
-								He wasn't always, though! Previously, he
-								has worked professionally as a designer,
-								audio engineer, and portrait artist
-								in Chicago.
-							</p>
-							<p>
-								Before that,
-								he was attending Ball State University
-								in Muncie, Indiana
-								for Fine Art and, later, Telecommunications.
-							</p>
-							<p>
-								Back further, a kid growing up in South Bend, Indiana
-							</p>
-							<p>
-								And before that, well, he is not so sure,
-								but he suspects that he "probably wasn't doing a whole
-								lot of existing."
-							</p>
+							<span className='column'>
+								<p>
+									Currently in the process
+									of moving to Seattle,
+									Matt O'Tousa
+									is a front-end developer with an ever-growing
+									knowledge of full-stack development.
+								</p>
+								<p>
+									He wasn't always, though! Previously, he
+									has worked professionally as a designer,
+									audio engineer, and portrait artist
+									in Chicago.
+								</p>
+							</span>
+							<span className='column'>
+								<p>
+									Before that,
+									he was attending Ball State University
+									for Fine Art and, later, Telecommunications.
+									Back further, a kid growing up in South Bend, Indiana
+								</p>
+								<p>
+									And before that, well, he is not so sure,
+									but he suspects that he "probably wasn't doing a whole
+									lot of existing."
+								</p>
+							</span>
 						</div>
-						<div className='center-contents'>
+						<div className='button-bar'>
 							<a href='/resume'>
 								<div className='about-me-button'>
 									<i className='fa fa-file-text-o fa-lg' aria-hidden='true'></i> 
