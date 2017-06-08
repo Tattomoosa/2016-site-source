@@ -80,7 +80,7 @@ class App extends Component {
 					>Artist Portfolio</div>
 					<div
 						onClick={() => this.scrollTo(3)}
-					>College Lab Site</div>
+					>Lab Website</div>
 					<div className='spacer'></div>
 					<div
 						onClick={() => this.scrollTo(4)}
@@ -190,7 +190,7 @@ class App extends Component {
 								I think there's even some <span style={cpHL}>jQuery</span> in there somewhere.
 							</p>
 						}
-						link={'http://www.codepen.com/tattomoosa'}
+						link={'http://www.codepen.io/tattomoosa'}
 						desktopImage={codepenimg}
 						color={cpColor}
 						nextPage={this.nextPage}

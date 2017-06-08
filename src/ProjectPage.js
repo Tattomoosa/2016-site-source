@@ -63,7 +63,10 @@ export default class ProjectPage extends Component {
 				<div className='project-page-container'>
 					<h2
 						className='project-page-header'
-						style={{background: color}}
+						style={{
+							background: color
+							,borderColor: color
+							}}
 					>
 						{projectName}
 					</h2>

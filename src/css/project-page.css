@@ -114,22 +114,81 @@
 
 .project-page-header {
 	padding: 10px;
-	padding-right: 80px;
+	padding-right: 60px;
 	position: relative;
 	display: inline-block;
+	box-sizing: border-box;
 	color: white;
 	background: #4286f4;
+	border-color: red;
+	padding-left: 60px;
+	left: -60px;
+	/* width: 320px; */
+	/* text-align: left; */
+	/* height: 22px; */
+	/* overflow: visible; */
+	/* z-index: 1000; */
 }
-.project-page-header:after {
-	content: '';
-	display: block;
-	position: absolute;
-	right: 100%;
-	top: 0;
-	width: 60px;
-	height: 100%;
-	background: inherit;
+@media (max-height: 500px) {
+	.project-page-header {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 }
+@media (max-width: 740px) {
+	.project-page-header {
+		padding-left: 20px;
+		padding-right: 20px;
+		/* width: 80vw; */
+		/* width: calc(100vw - 90px); */
+		left: -20px;
+	}
+}
+/* .project-page-header:before { */
+/* 	content: ''; */
+/* 	display: block; */
+/* 	position: absolute; */
+/* 	left:0; */
+/* 	bottom: 100%; */
+/* 	width: 0; */
+/* 	height: 0; */
+/* 	border-bottom: 30px solid #4286f4; */
+/* 	border-bottom-color: inherit; */
+/* 	border-left: 320px solid transparent; */
+/* } */
+/* .project-page-header:after { */
+/* 	content: ''; */
+/* 	display: block; */
+/* 	position: absolute; */
+/* 	left:0; */
+/* 	top: 100%; */
+/* 	width: 0; */
+/* 	height: 0; */
+/* 	border-top: 30px solid #4286f4; */
+/* 	border-top-color: inherit; */
+/* 	border-right: 320px solid transparent; */
+/* 	z-index: -1; */
+/* } */
+/* @media screen and (max-width: 740px) { */
+/* 	.project-page-header:before { */
+/* 		border-bottom: 20px solid #4286f4; */
+/* 		border-bottom-color: inherit; */
+/* 	} */
+/* 	.project-page-header:after { */
+/* 		border-top: 20px solid #4286f4; */
+/* 		border-top-color: inherit; */
+/* 	} */
+/* } */
+/* .project-page-header:after { */
+/* 	content: ''; */
+/* 	display: block; */
+/* 	position: absolute; */
+/* 	right: 100%; */
+/* 	top: 0; */
+/* 	width: 60px; */
+/* 	height: 100%; */
+/* 	background: inherit; */
+/* } */
 
 .project-page-menu {
 	position: absolute;
@@ -161,14 +220,35 @@
 	border-left: 30vw solid transparent;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 950px) {
+	.project-page-img-container>img {
+		max-width: 75%;
+		max-height: 40vh;
+	}
+}
+
+@media (max-width: 740px),
+screen and (max-height: 400px) {
 	.project-page-container {
 		padding: 20px;
 		padding-top: 30px;
 	}
-	.project-page-header {
-		padding-right: 40px;
+	/* .project-page-header { */
+	/* 	padding-right: 40px; */
+	/* } */
+	.project-page-img-container>img {
+		right: 20px;
+		bottom: 20px;
 	}
+	.project-page-menu {
+		right: 20px;
+		top: 10px;
+	}
+	.project-page-description {
+		max-width: 100%;
+	}
+}
+@media (max-width: 740px) {
 	.project-page-bg {
 		position: absolute;
 		width: 100%;
@@ -177,25 +257,16 @@
 		bottom: 0;
 		right: auto;
 	}
+	.project-page-img-container>img {
+		max-width: 75%;
+		max-height: 40vh;
+	}
 	.project-page-bg:after {
 		right: auto;
 		bottom: 100%;
 		border-bottom: 20vh solid #4286f4;
 		border-bottom-color: inherit;
 		border-left: 100vw solid transparent;
-	}
-	.project-page-img-container>img {
-		max-width: 75%;
-		max-height: 40vh;
-		right: 20px;
-		bottom: 50px;
-	}
-	.project-page-menu {
-		right: 20px;
-		top: 10px;
-	}
-	.project-page-description {
-		max-width: 100%;
 	}
 }
 
@@ -226,11 +297,10 @@
 	}
 }
 
-@media (min-width: 740px) and (max-height: 600px) {
+@media (max-height: 600px) and (min-width: 740px) {
 	.project-page-img-container > img {
 		max-width: 40vw;
-
-		max-height: 70vh;
+		max-height: 65vh;
 	}
 }
 
@@ -263,8 +333,41 @@
 	}
 }
 
-@media (min-width: 740px) and (max-height: 500px) {
+@media (min-width: 740px) and (max-height: 400px) {
 	.project-page-img-container > img {
-		max-width: 35vw;
+		max-width: 40vw;
+	}
+}
+
+@media (max-width:700px) and (max-height: 400px) {
+	.project-page-img-container {
+		position: static;
+	}
+	.project-page-img-container > img {
+		position: absolute;
+		/* bottom:0; */
+		/* right:0; */
+		max-width: 200vw;
+		max-height: 200vh;
+		top:-10%;
+		left:-10%;
+		width: 150vw;
+		border: none;
+		z-index: -1;
+	}
+	.project-page-bg {
+		display: none;
+	}
+	.project-page-description {
+		background: rgba(255,255,255,.95);
+		position: relative;
+		padding-left: 20px;
+		padding-right: 20px;
+		left: -20px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	.project-page-description>p {
+		background: transparent;
 	}
 }
