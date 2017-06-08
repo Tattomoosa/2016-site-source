@@ -113,8 +113,7 @@ class App extends Component {
 						projectName="Artist Portfolio"
 						projectDescription={
 							<p>
-							Alyssa Garcia is a Seattle-based artist specializing in 
-							ceramics, drawing, and painting.
+							Alyssa Garcia is a Seattle-based artist.
 							</p>
 						}
 						techDescription={
@@ -126,7 +125,7 @@ class App extends Component {
 								 portfolio website was built with
 								 <span style={alyssaHL}> WebPack </span> and includes 
 								<span style={alyssaHL}> dynamic image galleries </span>
-								which load content via the <span style={alyssaHL}>fetch API </span>
+								which load content via the <span style={alyssaHL}>RESTful API </span>
 								from a headless <span style={alyssaHL}>Drupal </span>
 								installation, all hosted from a <span style={alyssaHL}>LAMP</span> stack
 								built on a <span style={alyssaHL}>DigitalOcean Droplet</span>.
@@ -145,7 +144,7 @@ class App extends Component {
 						projectName="Lab Website"
 						projectDescription={
 							<p>
-								The O'Tousa Lab at Notre Dame studies "a wide range of molecular,
+								The O'Tousa Lab at Notre Dame studies "molecular,
 								biochemical, and cellular methods to analyze genes responsible for
 								normal visual function." 
 							</p>
@@ -178,7 +177,7 @@ class App extends Component {
 								including a <span style={cpHL}>random dungeon generator</span>,
 								<span style={cpHL}> Conway's Game of Life</span>,
 								a game of <span style={cpHL}>SIMON</span>, several <span style={cpHL}>
-								data-visualizations</span>, and some projects showcasing simple
+								data-visualizations</span>, and
 								<span style={cpHL}> RESTful API requests</span>.
 							</p>
 						}

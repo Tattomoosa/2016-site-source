@@ -144,6 +144,53 @@
 	}
 }
 
+@media screen and (max-height: 415px) and (max-width: 600px) {
+	.about-me-container>h2 {
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+	.about-me-container>h2::before {
+		border-bottom: 10px solid #4286f4;
+	}
+
+	.about-me-container>h2::after {
+		border-top: 10px solid #4286f4;
+	}
+
+	.about-me-page-container {
+		padding-top: 30px;
+	}
+	.fa {
+		display: none;
+	}
+	.button-bar {
+		height: 40px;
+	}
+}
+@media screen and (max-height: 320px) {
+	.about-me-container>h2 {
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+	.about-me-container>h2::before {
+		border-bottom: 10px solid #4286f4;
+	}
+
+	.about-me-container>h2::after {
+		border-top: 10px solid #4286f4;
+	}
+
+	.about-me-page-container {
+		padding-top: 30px;
+	}
+	.fa {
+		display: none;
+	}
+	.button-bar {
+		height: 40px;
+	}
+}
+
 @media screen and (max-height: 460px) and (min-width: 740px) {
 	.about-me-container>.text-container {
 		margin: auto;

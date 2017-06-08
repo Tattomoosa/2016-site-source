@@ -33,7 +33,8 @@
 }
 
 .project-page-description {
-	max-width: 400px;
+	width: 400px;
+	max-width: 55%;
 	position: relative;
 	z-index:100;
 	/* okay maybe... */
@@ -192,6 +193,9 @@
 	.project-page-menu {
 		right: 20px;
 		top: 10px;
+	}
+	.project-page-description {
+		max-width: 100%;
 	}
 }
 
