@@ -3,10 +3,18 @@
 body {
 	font-family: 'Roboto';
 	color: #333;
+	font-weight: 300;
+	background: #fdfdfd;
 }
+
 /*h1,h3 {
 	text-align: center;
 }*/
+@media (min-width: 400px) {
+	.word-break {
+		display: none;
+	}
+}
 dl {
 	position: relative;
 	max-width: 700px;
@@ -21,18 +29,54 @@ dl:after {
 	left: 20%;
 	top: -1.5em;
 }
+@media screen {
+	dl:after {
+		background: #4286f4;
+	}
+}
 dt {
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
+	font-size: .8em;
+	/* font-weight: 300 !important; */
 	text-align: right;
 	width: 17%;
 	width: calc(20% - 20px);
 	font-weight: bold;
 	float: left;
 }
+
+/* @media screen { */
+/* 	dt { */
+/* 		color: white; */
+/* 		background: #4286f4; */
+/* 		color: #4286f4; */
+/* 		line-height: 2em; */
+/* 		position: relative; */
+/* 		display: inline-block; */
+/* 	} */
+/* 	dt:before, dt:after { */
+/* 		content: ''; */
+/* 		display: block; */
+/* 		position: absolute; */
+/* 		z-index:-1; */
+/* 		background: #4286f4; */
+/* 		top: 0; */
+/* 		height: 100%; */
+/* 	} */
+/* 	dt::before { */
+/* 		width: 40vw; */
+/* 		right: 100%; */
+/* 	} */
+/* 	dt::after { */
+/* 		left: 100%; */
+/* 		width: 20px; */
+/* 	} */
+/* } */
+
 dd {
 	margin-left: 22%;
 	margin-left: calc(20% + 20px);
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 	max-width: 600px;
 }
 dd:after {
@@ -43,6 +87,16 @@ dd:after {
 h1,h2,h3,h4,h5,h6 {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
+	font-weight: 500;
+}
+h4 {
+	font-size: .8em;
+	text-transform: uppercase;
+}
+strong {
+	font-size: .7em;
+	text-transform: uppercase;
+	color: grey;
 }
 h6 {
 	font-family: sans-serif;
@@ -59,6 +113,7 @@ dl>h4,dl>h6 {
 }
 .work-history-headline h6 {
 	color: grey;
+	margin-top: 0;
 }
 
 .work-history-headline h6:before {
@@ -74,7 +129,7 @@ p {
 .top {
 	max-width: 700px;
 	margin: auto;
-	height: 120px;
+	height: 100px;
 	padding-top: 40px;
 }
 .contact {
@@ -91,9 +146,32 @@ p {
 	font-weight: normal;
 }
 
+a {
+	color: #4286f4;
+}
+
+.references {
+	/* position: ; */
+	/* bottom: 20px; */
+	/* right: 20px; */
+	text-align: center;
+	font-size: .8em;
+}
+.foot-top, .foot-bottom {
+	width: 100%;
+}
+.foot-top {
+	height: 10px;
+}
+.foot-bottom {
+	height: 60px;
+}
 @media print {
 	dd {
 		margin-bottom: 1em;
+	}
+	.top {
+		height: 80px;
 	}
 	dt {
 		font-size: 1em;
@@ -106,5 +184,12 @@ p {
 	}
 	h5 {
 		font-weight: normal;
+	}
+	.contact>h5:before {
+		content: attr(data-kind);
+		display: inline-block;
+	}
+	.foot-bottom {
+		display: none;
 	}
 }
