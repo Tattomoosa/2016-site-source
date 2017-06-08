@@ -9,6 +9,7 @@ import AboutMe from './AboutMe'
 import otousalabimg from './images/otousa-lab-site.png'
 import alyssaimg from './images/alyssa-site.png'
 import codepenimg from './images/codepen-projects.png'
+import behanceimg from './images/aeode-logo.png'
 
 class App extends Component {
 	constructor() {
@@ -58,6 +59,8 @@ class App extends Component {
 		const labHL = {color: labColor}
 		const cpColor = '#0ebeff'
 		const cpHL = {color: '#0d95c6'}
+		const bhColor = '#8a5151'
+		const bhHL = {color: '#8a5151'}
 		// const cpColor = '#cfb336'
 		// const cpHL = {color: '#cfb336'}
 
@@ -81,13 +84,16 @@ class App extends Component {
 					<div
 						onClick={() => this.scrollTo(3)}
 					>Lab Website</div>
-					<div className='spacer'></div>
 					<div
 						onClick={() => this.scrollTo(4)}
-					>CodePen Projects</div>
+					>On CodePen</div>
 					<div className='spacer'></div>
 					<div
 						onClick={() => this.scrollTo(5)}
+					>Graphic Design/Art</div>
+					<div className='spacer'></div>
+					<div
+						onClick={() => this.scrollTo(6)}
 					>About</div>
 					<a href='/resume'>
 						<div>
@@ -103,7 +109,7 @@ class App extends Component {
 				<Section>
 					<HomePage
 						onMenuClick={this.menuToggle}
-						onAboutClick={() => this.scrollTo(5)}
+						onAboutClick={() => this.scrollTo(6)}
 						nextPage={this.nextPage}
 					/>
 				</Section>
@@ -151,8 +157,8 @@ class App extends Component {
 						}
 						techDescription={
 							<p>
-								This is a simple, static
-								<span style={labHL}>responsive </span>
+								This is a simple static
+								<span style={labHL}> responsive </span>
 								site. No frameworks or external
 								libraries were used, except to integrate
 								<span style={labHL}> Google Analytics</span>.
@@ -193,6 +199,32 @@ class App extends Component {
 						link={'http://www.codepen.io/tattomoosa'}
 						desktopImage={codepenimg}
 						color={cpColor}
+						nextPage={this.nextPage}
+						prevPage={this.prevPage}
+					/>
+				</Section>
+				<Section>
+					<ProjectPage
+						onMenuClick={this.menuToggle}
+						projectName="Graphic Design/Art"
+						projectDescription={
+							<p>
+								In addition to web development and design, I also do graphic design,
+								portraiture, and other sorts of art and illustration.
+							</p>
+						}
+						techDescription={
+							<p>
+								To keep this site focused on my work as a web developer, all other
+								art and design work is hosted off-site at <a
+									href='http://www.behance.net/MattOTousa'
+									style={bhHL}>Behance.net
+								</a>.
+							</p>
+						}
+						link={'http://www.behance.net/MattOTousa'}
+						desktopImage={behanceimg}
+						color={bhColor}
 						nextPage={this.nextPage}
 						prevPage={this.prevPage}
 					/>
