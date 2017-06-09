@@ -245,7 +245,7 @@ screen and (max-height: 400px) {
 		top: 10px;
 	}
 	.project-page-description {
-		max-width: 100%;
+		max-width: 80%;
 	}
 }
 @media (max-width: 740px) {
@@ -345,13 +345,15 @@ screen and (max-height: 400px) {
 	}
 	.project-page-img-container > img {
 		position: absolute;
-		/* bottom:0; */
-		/* right:0; */
+		bottom:0;
+		right:0;
 		max-width: 200vw;
 		max-height: 200vh;
 		top:-10%;
 		left:-10%;
-		width: 150vw;
+		bottom: -10%;
+		right: -10%;
+		/* width: 170vmax; */
 		border: none;
 		z-index: -1;
 	}
@@ -365,7 +367,9 @@ screen and (max-height: 400px) {
 		padding-right: 20px;
 		left: -20px;
 		padding-bottom: 20px;
+		margin-top: 10px;
 		width: 100%;
+		max-width: 400px;
 	}
 	.project-page-description>p {
 		background: transparent;

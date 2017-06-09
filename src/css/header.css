@@ -17,6 +17,7 @@
 	line-height: 40px;
 	text-decoration: none;
 	color: black;
+	transition: color .2s;
 }
 .header>span:hover, .header a:hover {
 	color: white;
