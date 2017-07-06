@@ -119,7 +119,7 @@ class App extends Component {
 						projectName="Artist Portfolio"
 						projectDescription={
 							<p>
-							Alyssa Garcia is a Seattle-based artist.
+							Alyssa Garcia is a Portland-based artist.
 							</p>
 						}
 						techDescription={
