@@ -21,11 +21,10 @@ export default class AboutMe extends Component {
 						<div className='text-container'>
 							<span className='column'>
 								<p>
-									Currently in the process
-									of moving to Seattle,
-									Matt O'Tousa
+									Matt O'Tousa 
 									is a front-end developer with an ever-growing
-									knowledge of full-stack development.
+									knowledge of full-stack development
+									living in Portland, Oregon.
 								</p>
 								<p>
 									He wasn't always, though! Previously, he
