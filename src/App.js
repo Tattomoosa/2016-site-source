@@ -10,6 +10,7 @@ import otousalabimg from './images/otousa-lab-site.png'
 import alyssaimg from './images/alyssa-site.png'
 import codepenimg from './images/codepen-projects.png'
 import behanceimg from './images/aeode-logo.png'
+import sttimg from './images/string-theory-tees.png'
 
 class App extends Component {
 	constructor() {
@@ -53,6 +54,8 @@ class App extends Component {
 		})
 	}
   render() {
+		const sttColor = '#596883';
+		const sttHL = { color : sttColor };
 		const alyssaColor = '#b85450'
 		const alyssaHL = {color: alyssaColor}
 		const labColor = '#0ba050'
@@ -80,20 +83,23 @@ class App extends Component {
 					<div className='spacer'></div>
 					<div
 						onClick={() => this.scrollTo(2)}
-					>Artist Portfolio</div>
+					>String Theory T-Shirt Co.</div>
 					<div
 						onClick={() => this.scrollTo(3)}
-					>Lab Website</div>
+					>Alyssa Garcia Portfolio</div>
 					<div
 						onClick={() => this.scrollTo(4)}
-					>On CodePen</div>
-					<div className='spacer'></div>
+					>O'Tousa Lab at Notre Dame</div>
 					<div
 						onClick={() => this.scrollTo(5)}
-					>Graphic Design/Art</div>
+					>School Projects</div>
 					<div className='spacer'></div>
 					<div
 						onClick={() => this.scrollTo(6)}
+					>Graphic Design/Art</div>
+					<div className='spacer'></div>
+					<div
+						onClick={() => this.scrollTo(7)}
 					>About</div>
 					<a href='/resume'>
 						<div>
@@ -116,25 +122,39 @@ class App extends Component {
 				<Section>
 					<ProjectPage
 						onMenuClick={this.menuToggle}
-						projectName="Artist Portfolio"
+						projectName="String Theory T-Shirt Co."
 						projectDescription={
 							<p>
-							Alyssa Garcia is a Portland-based artist.
+								String Theory T-Shirt Co. sells space shirts and other science-inspired apparel.
 							</p>
 						}
 						techDescription={
 							<p>
-								Utilizing <span style={alyssaHL}>React </span>
-								with <span style={alyssaHL}>React-Router </span>
-								 and <span style={alyssaHL}>React-Fully-Scrolled </span>
-								 this <span style={alyssaHL}>responsive </span>
-								 portfolio website was built with
-								 <span style={alyssaHL}> WebPack </span> and includes 
-								<span style={alyssaHL}> dynamic image galleries </span>
-								which load content via the <span style={alyssaHL}>RESTful API </span>
-								from a headless <span style={alyssaHL}>Drupal </span>
-								installation, all hosted from a <span style={alyssaHL}>LAMP</span> stack
-								built on a <span style={alyssaHL}>DigitalOcean Droplet</span>.
+								Wordpress, LEMP Stack, WooCommerce, Stripe API
+							</p>
+						}
+						link={'https://www.stringtheorytees.com'}
+						desktopImage={sttimg}
+						color={sttColor}
+						nextPage={this.nextPage}
+						prevPage={this.prevPage}
+					/>
+				</Section>
+				<Section>
+					<ProjectPage
+						onMenuClick={this.menuToggle}
+						projectName="Alyssa Garcia's Portfolio"
+						projectDescription={
+							<p>
+							Alyssa Garcia is a Portland-based artist specializing in illustration and ceramics.
+							</p>
+						}
+						techDescription={
+							<p>
+								React,
+								WebPack,
+								Drupal,
+								on LAMP Stack.
 							</p>
 						}
 						link={'https://www.alyssagarcia.art'}
@@ -157,11 +177,9 @@ class App extends Component {
 						}
 						techDescription={
 							<p>
-								This is a simple static
-								<span style={labHL}> responsive </span>
-								site. No frameworks or external
-								libraries were used, except to integrate
-								<span style={labHL}> Google Analytics</span>.
+								HTML,
+							  CSS,
+								a little Javascript
 							</p>
 						}
 						link={'http://www3.nd.edu/~jotousa/labwww/'}
@@ -174,26 +192,23 @@ class App extends Component {
 				<Section>
 					<ProjectPage
 						onMenuClick={this.menuToggle}
-						projectName="CodePen Projects"
+						projectName="School Projects"
 						projectDescription={
 							<p>
-								Mostly
-								<span style={cpHL}> FreeCodeCamp </span>
-								projects, 
-								including a <span style={cpHL}>random dungeon generator</span>,
-								<span style={cpHL}> Conway's Game of Life</span>,
-								a game of <span style={cpHL}>SIMON</span>, several <span style={cpHL}>
-								data-visualizations</span>, and
-								<span style={cpHL}> RESTful API requests</span>.
+								Mostly <a href="www.freecodecamp.com" style={ cpHL }>FreeCodeCamp</a> projects:
+								Random dungeon generator, Conway's Game of Life, Data Visualization, RESTful communication, etc.
 							</p>
 						}
 						techDescription={
 							<p>
-								These utilize <span style={cpHL}>React</span>,
-								<span style={cpHL}> D3</span>, <span style={cpHL}>Bootstrap</span>,
-								the <span style={cpHL}>Canvas API</span>
-								, and the <span style={cpHL}>Web Audio API</span>, among others. 
-								I think there's even some <span style={cpHL}>jQuery</span> in there somewhere.
+								React,
+								D3,
+								Bootstrap,
+							  RESTful API
+								Canvas API,
+							  Web Audio API,
+								jQuery,
+								among others...
 							</p>
 						}
 						link={'http://www.codepen.io/tattomoosa'}
