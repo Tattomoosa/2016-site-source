@@ -16,6 +16,10 @@ body {
 	display: none;
 }
 
+br {
+	line-height: 5px;
+}
+
 dl {
 	position: relative;
 	max-width: 700px;
@@ -23,16 +27,17 @@ dl {
 }
 dl:after {
 	content: '';
-	height: calc(100% + 3em);
+	height: calc(100% + 1em);
 	width: 1px;
 	background: #333;
 	position: absolute;
 	left: 20%;
-	top: -1.5em;
+	top: -.5em;
 }
 @media screen {
 	dl:after {
 		background: #4286f4;
+		background: #333;
 	}
 }
 dt {
@@ -77,14 +82,15 @@ dt {
 dd {
 	margin-left: 22%;
 	margin-left: calc(20% + 20px);
-	margin-bottom: 2em;
-	max-width: 600px;
+	margin-bottom: .8em;
+	max-width: 500px;
 }
-dd:after {
-	content: '';
-	display: block;
-	clear: left;
-}
+
+/* dd:after { */
+/* 	content: ''; */
+/* 	display: block; */
+/* 	clear: left; */
+/* } */
 h1,h2,h3,h4,h5,h6 {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
@@ -112,39 +118,135 @@ dl>h4,dl>h6 {
 	padding: 0;
 }
 
-.work-history-headline h4, .work-history-headline h6 {
+.work-history-headline h4, .work-history-headline h6,
+.education h4, .education h6 {
 	display: inline-block;
 }
-.work-history-headline h6 {
+.work-history-headline h6,
+.education h6 {
+	font-size: .5em;
 	color: grey;
 	margin-top: 0;
 }
 
-.work-history-headline h6:before {
-	content: 'from '
+.work-history-headline h6:before, 
+.education h6:before {
+	content: '( '
+}
+.work-history-headline h6:after,
+.education h6:after {
+	content: ' )'
 }
 
+.work-history-headline {
+	border-bottom: 1px solid lightgrey;
+	padding-top: 2px;
+	width: fit-content;
+	margin-bottom: 5px;
+	margin-top: 1em;
+}
+
+.work-history-headline:first-of-type {
+	margin-top: 0;
+}
+.education {
+	/* border-bottom: 1px solid lightgrey; */
+	/* padding-top: 2px; */
+	width: fit-content;
+	margin-bottom: 5px;
+	margin-top: 1em;
+}
 p {
 	/* font-family: sans-serif; */
 	margin-top: 10px;
+	margin: 0;
+	padding: 0;
 	line-height: 1.4em;
-	font-size: 14px;
+	font-size: 12px;
 }
+
+.work-history-headline .company,
+.education .company {
+	color: grey;
+	font-size: 10px;
+	line-height: 1em;
+	font-weight: lighter;
+	display: block;
+}
+
+.inline h5:after {
+	content: '';
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 1px;
+	top: 2px;
+	background: lightgrey; 
+}
+
+ul {
+	font-size: 10px;
+	margin-top: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2em;
+	list-style-position: inside;
+	list-style-type: none;
+	flex-grow: 1;
+	/* width: 80px; */
+	max-width: 100px;
+	min-width: 60px;
+}
+
+.inline.flex {
+	/* border-left: 1px solid lightgrey; */
+	/* border-right: 1px solid lightgrey; */
+	padding: 2px;
+}
+
+ul>ul {
+	padding-left: 0;
+	margin-left: 8px;
+}
+ul>ul>li:before {
+	content: '- ';
+	color: lightgrey;
+}
+/*
+ul>li:before {
+	content: "";
+	display: inline-block;
+	position: relative;
+	right: 0;
+	bottom: .3em;
+	width: 10px;
+	margin-right: .1em;
+	height: 1px;
+	background: #4286f4;
+}
+*/
+
 .top {
 	max-width: 700px;
 	margin: auto;
 	height: 100px;
 	padding-top: 40px;
 }
+
 .contact {
 	float: right;
 	padding-top: 10px;
 	/* font-family: sans-serif; */
 	text-align: right;
+	font-size: 12px;
 }
 
 .contact>h5, .contact a {
-	line-height: 1.2;
+	font-size: 12px;
+	font-weight: lighter;
+	line-height: 1.4;
 	padding:0;
 	margin:0;
 }
@@ -153,6 +255,7 @@ p {
 	float: left;
 	/* text-align: right; */
 }
+
 
 .name h1, .name h3 {
 	font-weight: normal;
@@ -164,14 +267,59 @@ p {
 a {
 	color: #4286f4;
 }
+.inline {
+	padding-left: 8px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 6px;
+	margin-top: 5px;
+	/* margin-bottom: 5px; */
+}
+
+.flex {
+	/* flex: 1; */
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+.flex-contain {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	position: relative;
+}
+.flex-contain>a,
+.flex-contain>p {
+	display: inline-block;
+	width: fit-content;
+	font-size: 12px;
+	flex-grow: 0;
+}
+.table-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: stretch;
+	position: relative;
+	top: -5px;
+}
+.inline>.inline {
+	border: none;
+	margin-bottom: 0;
+}
+.inline h5 {
+	text-transform: uppercase;
+	font-size: 10px;
+}
 
 .references {
 	/* position: ; */
 	/* bottom: 20px; */
 	/* right: 20px; */
+	font-size: 10px;
 	text-align: right;
 	padding-right: 25px;
-	font-size: .8em;
 }
 
 .foot-top, .foot-bottom {
@@ -187,9 +335,15 @@ a {
 }
 .work-history-headline h4,
 .work-history-headline h6{
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
-@media (max-width: 550px) {
+.small-spacer {
+	height: 5px;
+}
+
+@media screen and @media (max-width: 600px) {
 	dl:after {
 		display: none;
 	}
@@ -213,6 +367,7 @@ a {
 		bottom: 0;
 		left: -20px;
 		background: #4286f4;
+		background: black;
 	}
 	dd {
 		margin-left: 0;

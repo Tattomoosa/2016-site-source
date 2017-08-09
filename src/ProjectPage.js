@@ -75,6 +75,7 @@ export default class ProjectPage extends Component {
 						{projectDescription}
 						<br/>
 						<br/>
+						<h6 style={{color: color}}>TECH</h6>
 						{techDescription}
 						<br/>
 						<a
