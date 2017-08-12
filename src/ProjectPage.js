@@ -86,14 +86,16 @@ export default class ProjectPage extends Component {
 							style={{color: color, borderColor: color}}
 						>Visit Site</a>
 					</div>
+					<a href={link}>
 					<div className='project-page-img-container'>
 						<div className='project-page-img-vert-align-helper'></div>
-						<img
-							src={desktopImage}
-							alt={'A screenshot of ' + projectName}
-							style={{borderColor: color}}
-						/>
-					</div>
+							<img
+								src={desktopImage}
+								alt={'A screenshot of ' + projectName}
+								style={{borderColor: color}}
+							/>
+						</div>
+					</a>
 				</div>
 
 				<div className='top-center-parent'

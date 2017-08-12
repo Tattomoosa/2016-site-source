@@ -11,6 +11,7 @@ import alyssaimg from './images/alyssa-site.png'
 import codepenimg from './images/codepen-projects.png'
 import behanceimg from './images/aeode-logo.png'
 import sttimg from './images/string-theory-tees.png'
+import waspimg from './images/wasp-image.png'
 
 class App extends Component {
 	constructor() {
@@ -64,6 +65,8 @@ class App extends Component {
 		const cpHL = {color: '#0d95c6'}
 		const bhColor = '#8a5151'
 		const bhHL = {color: '#8a5151'}
+		const waspColor = 'slategrey'
+		const waspHL = {color: 'slategrey'}
 		// const cpColor = '#cfb336'
 		// const cpHL = {color: '#cfb336'}
 
@@ -89,17 +92,20 @@ class App extends Component {
 					>Alyssa Garcia Portfolio</div>
 					<div
 						onClick={() => this.scrollTo(4)}
-					>O'Tousa Lab at Notre Dame</div>
+					>Web Audio Signal Processor</div>
 					<div
 						onClick={() => this.scrollTo(5)}
+					>O'Tousa Lab at Notre Dame</div>
+					<div
+						onClick={() => this.scrollTo(6)}
 					>School Projects</div>
 					<div className='spacer'></div>
 					<div
-						onClick={() => this.scrollTo(6)}
+						onClick={() => this.scrollTo(7)}
 					>Graphic Design/Art</div>
 					<div className='spacer'></div>
 					<div
-						onClick={() => this.scrollTo(7)}
+						onClick={() => this.scrollTo(8)}
 					>About</div>
 					<a href='/resume'>
 						<div>
@@ -140,6 +146,7 @@ class App extends Component {
 						prevPage={this.prevPage}
 					/>
 				</Section>
+
 				<Section>
 					<ProjectPage
 						onMenuClick={this.menuToggle}
@@ -160,6 +167,29 @@ class App extends Component {
 						link={'https://www.alyssagarcia.art'}
 						desktopImage={alyssaimg}
 						color={alyssaColor}
+						nextPage={this.nextPage}
+						prevPage={this.prevPage}
+					/>
+				</Section>
+
+				<Section>
+					<ProjectPage
+						onMenuClick={this.menuToggle}
+						projectName="Web Audio Signal Processor"
+						projectDescription={
+							<p>
+								WASP is a fun little Web Audio API GUI that lets you connect audio nodes to one
+								another and make simple sound synthesis. 
+							</p>
+						}
+						techDescription={
+							<p>
+								jQuery... way too much jQuery. Lots of SVG, too.
+							</p>
+						}
+						link={'/wasp'}
+						desktopImage={waspimg}
+						color={waspColor}
 						nextPage={this.nextPage}
 						prevPage={this.prevPage}
 					/>
