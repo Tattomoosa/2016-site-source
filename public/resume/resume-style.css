@@ -103,7 +103,7 @@ h4 {
 	text-transform: uppercase;
 }
 strong {
-	font-size: .8em;
+	font-size: 1em;
 	font-weight: 300;
 	text-transform: uppercase;
 	color: grey;
@@ -124,7 +124,7 @@ dl>h4,dl>h6 {
 }
 .work-history-headline h6,
 .education h6 {
-	font-size: .5em;
+	font-size: .6em;
 	color: grey;
 	margin-top: 0;
 }
@@ -162,13 +162,13 @@ p {
 	margin: 0;
 	padding: 0;
 	line-height: 1.4em;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .work-history-headline .company,
 .education .company {
 	color: grey;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 1em;
 	font-weight: lighter;
 	display: block;
@@ -185,7 +185,7 @@ p {
 }
 
 ul {
-	font-size: 10px;
+	font-size: 12px;
 	margin-top: 0;
 	padding-left: 0;
 	margin-bottom: 0;
@@ -373,6 +373,9 @@ a {
 		margin-left: 0;
 	}
 }
+.print-only {
+	display: none;
+}
 
 @media only print {
 	html,body {
@@ -415,6 +418,9 @@ a {
 	}
 	.references {
 		margin-top: 40px;
+	}
+	.print-only {
+		display: inline-block;
 	}
 	/* dl { */
 	/* 	padding-bottom: 0; */
